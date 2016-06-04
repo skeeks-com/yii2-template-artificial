@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>AR Documentation</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="wrap">
+            <nav class="navbar navbar-static-top navbar-inverse navbar-default" role="navigation">            
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Artificial Reason Documentation</a>
+                </div>
+                
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="https://wrapbootstrap.com/theme/artificial-reason-responsive-full-pack-WB0307B17">Theme Page</a></li>
+                        <li><a href="changelog.txt">Changelog</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </nav>
+
+            <div class="sidebar">
+                <div class="block">
+                    <h3>Install &amp; Configure</h3>
+                    <ol>
+                        <li><a href="#intro">Introduction</a></li>
+                        <li><a href="#support">Support and Suggestions</a></li>
+                        <li><a href="#pack_content">Package Content</a></li>
+                        <li><a href="#install">Installation</a></li>
+                        <li><a href="#set_color">Setting a default color scheme</a></li>
+                        <li><a href="#make_color">Make a new color scheme</a></li>
+                        <li><a href="#disable_conf">Enable/Disable Configurator</a></li>
+                        <li><a href="#plugins">Plugins</a></li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="content">
+                <section id="intro">
+                    <h1>Introduction</h1>
+                    <p>Welcome to the documentation of Artificial Reason template. In this guide you will find everything needed to install and configure all aspects of the template.</p>
+                </section>
+                
+                <section id="support">
+                    <h1>Support and Suggestions</h1>
+                    <p>We are preparing a support center for all users of Artificial Reason template. Meanwhile you can send all your questions to the following email: <a href="mailto:adrigm@razonartificial.com">adrigm@razonartificial.com</a></p>
+                    <p>It is recommended to always look in the manual to see if your question is resolved in the documentation.</p>
+                </section>
+
+                <section id="pack_content">
+                    <h1>Package Content</h1>
+                    <p>Package content is:</p>
+                    <ul>
+                        <li><strong>artificial-reason-grunt folder</strong>
+                            <ul>
+                                <li><strong>css folder</strong> - css template files </li>
+                                <li><strong>less folder</strong> - less template files </li>
+                                <li><strong>font folder</strong> - font files used in the template. </li>
+                                <li><strong>html folder</strong> - all html files (Raw) are available. </li>
+                                <li><strong>Folders: img, js, less</strong> - Different image files, javascript and find less uncompiled.</li>
+                                <li><strong>bower.js</strong> - Bower configuration file contains the template dependencies. </li>
+                                <li><strong>Gruntfile.js</strong> - Grunt configuration file. </li>
+                                <li><strong>package.json</strong> - Configuration File node.js. </li>
+                                
+                            </ul>
+                        </li>
+                        <li><strong>artificial-reason-gulp folder</strong>
+                            <ul>
+                                <li><strong>src folder</strong>
+                                    <ul>
+                                        <li><strong>css folder</strong> - css template files </li>
+                                        <li><strong>less folder</strong> - less template files </li>
+                                        <li><strong>font folder</strong> - font files used in the template. </li>
+                                        <li><strong>html folder</strong> - all html files (Raw) are available. </li>
+                                        <li><strong>Folders: img, js, less</strong> - Different image files, javascript and find less uncompiled.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>bower.js</strong> - Bower configuration file contains the template dependencies. </li>
+                                <li><strong>gulpfile.js</strong> - Gulp configuration file. </li>
+                                <li><strong>package.json</strong> - Configuration File node.js. </li>
+                                
+                            </ul>
+                        </li>
+                        <li><strong>README.txt</strong> - Readme highly recommended reading. </li>
+                        <li><strong>changelog.txt</strong> - File with the change history of all updates. </li>
+                        <li><strong>Credits.txt</strong> - Credits has third party content. </li>                        
+                        <li><strong>dist folder</strong> - Contains all final theme files ready to use, unless you want to configure anything to use the files in this folder. </li>
+                        <li><strong>Documentation folder</strong> - all documentation template is located. </li>
+                        
+                        
+                    </ul>
+
+                    <h2>Distribution Folder</h2>
+                    <p>Special attention to the content of the dist folder containing all the files ready to use the contents are as follows:</p>
+                    <ul>
+                        <li>assets/
+                            <ul>
+                                <li>css/</li>
+                                <li>fonts/</li>
+                                <li>img/</li>
+                                <li>js/</li>
+                            </ul>
+                        </li>
+                        <li>header-dark-dark/</li>
+                        <li>header-dark-inverse/</li>
+                        <li>header-dark-light/</li>
+                        <li>header-light-dark/</li>
+                        <li>header-light-inverse/</li>
+                        <li>header-light-light/</li>
+                        <li>navbar-dark/</li>
+                        <li>navbar-inverse/</li>
+                        <li>navbar-light/</li>
+                    </ul>
+
+                    <p>The <strong>assets folder</strong> contains all the <strong>css</strong>, <strong>fonts</strong>, <strong>img</strong> and <strong>js</strong> files already processed and ready to use. The other folder contains the same html elements in each of them, but processed for the nine types of <em>headers</em> that offers Artificial Reason</p>
+                    <p>To use, simply copy the contents of the folder selected one of the headings in the <strong>assets folder</strong>. Now if the <strong>assets folder</strong> contains template ready to use.</p>
+                </section>
+
+                <section id="install">
+                    <h1>Installation</h1>
+                    <p>You have two options: Use the compiled template or generate it yourself with grunt.</p>
+
+                    <h2>Use the compiled template</h2>
+                    <ol>
+                        <li>Create a folder where you want to have your installation.</li>
+                        <li>Copy the contents of the following folder: <strong>dist/assets</strong> in your installation folder</li>
+                        <li>Copy to your install folder all the html files in a folder found in <strong>dist/</strong> According to the header you choose.</li>
+                        <li>Ready to use!</li>
+                    </ol>
+
+                    <h2>Build the template with Bower and Grunt</h2>
+                    <p>To use this option you must have installed node.js, Bower and Grunt. (Bower requires using git to download the packages).</p>
+                    <p>Once installed the necessary tools, with a console command sure that you are in the template folder and run the following commands:</p>
+                    <pre>npm install
+bower install
+grunt dist</pre>
+                    
+                    <p>This will generate the <strong>dist folder</strong> with all the processed content, then follow the instructions on the first option.</p>
+                    <p>If you want to have an alternative method where all the file paths are relative and not have to copy anything from the asset folder to run the template so you can test all types of header, you should change the <strong>last command</strong> by following:</p>
+
+                    <pre>grunt dev</pre>
+
+                    <p>Now you can directly upload the contents of the <strong>dist directory</strong> and everything works properly. You can use this option to modify the <strong>Gruntfile.js</strong> file and set your own path relative to assets, it should only change the <em>relativeAssetsPath</em> variable.</p>
+
+                    <h2>Build the template with Bower and Gulp</h2>
+                    <p>The process is the same as for grunt. Simply install gulp instead of grunt and use the following commands.</p>
+                    <pre>npm install
+bower install
+gulp</pre>
+                </section>
+
+                <section id="set_color">
+                    <h1>Setting a default color scheme</h1>
+                    <p>You have two options:</p>
+
+                    <h2>Compiled files</h2>
+                    <ol>
+                        <li>Open a file html </li>
+                        <li>Locate the following line: <code>&lt;link href = &quot;css/style-blue.css&quot; rel = &quot;stylesheet&quot; media = &quot;screen&quot; title = &quot;default&quot;&gt;</code></li>
+                        <li>Change <code>style-blue.css</code> by any color you want. The colors available are in the folder <strong>dist/css</strong> </li>
+                        <li>Repeat for all html files (We recommend using a text editor with replacement text documents).</li>
+                    </ol>
+
+                    <h2>Grunt Option (recommended)</h2>
+                    <ol>
+                        <li>Edit html/layout/header/head.html file.</li>
+                        <li>Change the line <code>&lt;link href = &quot;&lt;% =% assets&gt; css / style-blue.css&quot; rel = &quot;stylesheet&quot; media = &quot;screen&quot; title = &quot;default&quot;&gt;</code> replacing <code>style-blue.css</code> by color you want. The colors available are in the folder <strong>less/colors</strong></li>
+                        <li>Save the file and now do the grunt compilation process (see installation grunt).</li>
+                    </ol>
+                </section>
+
+                <section id="make_color">
+                    <h1>Make a new color scheme</h1>
+                    <p>To create a new color scheme is necessary to use compilation with Grunt.</p>
+
+                    <ol>
+                        <li>Go to the <strong>less/colors</strong> folder.</li>
+                    <li>Copy one of the files and rename it with the name you want, example: <strong>newColor.less</strong></li>
+                    <li>Edit the new file and set its new color scheme by changing the value of the variables. Save the file.</li>
+                    <li>Edit <strong>Gruntfile.js</strong> file located in the root directory. Add the new color with the name of the file created in the previous step:
+                    <pre>colors: {
+  aqua: {}, blue: {}, blue2: {}, blue3: {}, blue4: {}, blue5: {}, fuchsia: {}, gray: {},
+  green: {}, green2: {}, green3: {}, green4: {}, green5: {}, orange: {}, orange2: {},
+  orange3: {}, pink: {}, red: {}, red2: {}, red3: {}, violet: {}, violet2: {}, violet3: {},
+  yellow: {}, yellow2: {}, <strong>newColor:{}</strong>
+},</pre>
+                    </li>
+                    <li>Save the file. You can now follow the instructions above to set it by default and compile your template with your new color scheme.</li>
+                    </ol>
+                </section>
+
+                <section id="disable_conf">
+                    <h1>Enable/Disable Configurator</h1>
+                    <p>To remove the floating panel with color picker follow these steps:</p>
+
+                    <ol>
+                        <li>Edit file html/layout/header.html</li>
+                        <li>Delete line: <code>&lt;!-- build:include header/configurator.html --&gt;&lt;!-- /build --&gt;</code></li>
+                        <li>Save the file and follow the orders of usual compilation.</li>
+
+                    </ol>
+                </section>
+
+                <section id="plugins">
+                    <h1>Plugins</h1>
+                    <p>Artificial reason includes several third-party plugins, here we leave links to the official documentation of each project to customize as desired.</p>
+
+                    <ul>
+                        <li><strong>Bootstrap:</strong> <a href="http://getbootstrap.com/">http://getbootstrap.com/</a></li>
+                        <li><strong>MixitUp:</strong> <a href="https://mixitup.kunkalabs.com/">https://mixitup.kunkalabs.com/</a> <strong>Included Single-developer Commercial License!</strong></li>
+                        <li><strong>Awesome Font:</strong> <a href="http://fortawesome.github.io/Font-Awesome/">http://fortawesome.github.io/Font-Awesome/</a></li>
+                        <li><strong>Circles.js: </strong> <a href="https://github.com/lugolabs/circles">https://github.com/lugolabs/circles</a></li>
+                        <li><strong>BxSlider: </strong> <a href="http://bxslider.com/">http://bxslider.com/</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <!-- jQuery -->
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    </body>
+</html>

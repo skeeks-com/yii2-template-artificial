@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Artificial Reason</title>
+
+    <link rel="shortcut icon" href="assets/img/favicon.png" />
+
+    <meta name="description" content="">
+
+    <!-- CSS -->
+    <link href="assets/css/preload.css" rel="stylesheet">
+
+    <!-- Compiled in vendors.js -->
+    <!--
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-switch.min.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/animate.min.css" rel="stylesheet">
+    <link href="assets/css/slidebars.min.css" rel="stylesheet">
+    <link href="assets/css/lightbox.css" rel="stylesheet">
+    <link href="assets/css/jquery.bxslider.css" rel="stylesheet" />
+    <link href="assets/css/buttons.css" rel="stylesheet">
+    -->
+
+    <link href="assets/css/vendors.css" rel="stylesheet">
+    <link href="assets/css/syntaxhighlighter/shCore.css" rel="stylesheet" >
+
+    <!-- RS5.0 Stylesheet -->
+    <!--<link rel="stylesheet" type="text/css" href="assets/css/settings.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/layers.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/navigation.css">-->
+
+    <link href="assets/css/style-blue.css" rel="stylesheet" title="default">
+    <link href="assets/css/width-full.css" rel="stylesheet" title="default">
+
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="assets/js/html5shiv.min.js"></script>
+        <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status">&nbsp;</div>
+</div>
+
+<body>
+<div id="agm-configurator">
+    <div id="agm-configurator-content">
+        <div class="panel-group" id="accordion-conf" role="tablist" aria-multiselectable="true">
+            <!-- collapse panel -->
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion-conf" href="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+                        Color Selector
+                    </a>
+                </div>
+                <div id="collapseOne1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                        <div id="color-options">
+                            <a href="javascript:void(0);" rel="style-blue.css" class="color-box color-blue">blue</a>
+                            <a href="javascript:void(0);" rel="style-blue2.css" class="color-box color-blue2">blue2</a>
+                            <a href="javascript:void(0);" rel="style-blue3.css" class="color-box color-blue3">blue3</a>
+                            <a href="javascript:void(0);" rel="style-blue4.css" class="color-box color-blue4">blue4</a>
+                            <a href="javascript:void(0);" rel="style-blue5.css" class="color-box color-blue5">blue5</a>
+                            <a href="javascript:void(0);" rel="style-green.css" class="color-box color-green">green</a>
+                            <a href="javascript:void(0);" rel="style-green2.css" class="color-box color-green2">green2</a>
+                            <a href="javascript:void(0);" rel="style-green3.css" class="color-box color-green3">green3</a>
+                            <a href="javascript:void(0);" rel="style-green4.css" class="color-box color-green4">green4</a>
+                            <a href="javascript:void(0);" rel="style-green5.css" class="color-box color-green5">green5</a>
+                            <a href="javascript:void(0);" rel="style-red.css" class="color-box color-red">red</a>
+                            <a href="javascript:void(0);" rel="style-red2.css" class="color-box color-red2">red2</a>
+                            <a href="javascript:void(0);" rel="style-red3.css" class="color-box color-red3">red3</a>
+                            <a href="javascript:void(0);" rel="style-fuchsia.css" class="color-box color-fuchsia">fuchsia</a>
+                            <a href="javascript:void(0);" rel="style-pink.css" class="color-box color-pink">pink</a>
+                            <a href="javascript:void(0);" rel="style-yellow.css" class="color-box color-yellow">yellow</a>
+                            <a href="javascript:void(0);" rel="style-yellow2.css" class="color-box color-yellow2">yellow2</a>
+                            <a href="javascript:void(0);" rel="style-orange.css" class="color-box color-orange">orange</a>
+                            <a href="javascript:void(0);" rel="style-orange2.css" class="color-box color-orange2">orange2</a>
+                            <a href="javascript:void(0);" rel="style-orange3.css" class="color-box color-orange3">orange3</a>
+                            <a href="javascript:void(0);" rel="style-violet.css" class="color-box color-violet">violet</a>
+                            <a href="javascript:void(0);" rel="style-violet2.css" class="color-box color-violet2">violet2</a>
+                            <a href="javascript:void(0);" rel="style-violet3.css" class="color-box color-violet3">violet3</a>
+                            <a href="javascript:void(0);" rel="style-aqua.css" class="color-box color-aqua">aqua</a>
+                            <a href="javascript:void(0);" rel="style-gray.css" class="color-box color-gray">gray</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- collapse panel -->
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion-conf" href="#collapseTwo2" aria-expanded="true" aria-controls="collapseTwo2" class="collapsed">
+                        Header Options
+                    </a>
+                </div>
+                <div id="collapseTwo2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body">
+                        <h5>Header Style</h5>
+                        <form id="header-option">
+                            <div class="radio radio-dark">
+                                <input type="radio" name="headerRadio" id="header-full-radio" value="header-full" checked>
+                                <label for="header-full-radio">Light Header</label>
+                            </div>
+                            <div class="radio radio-dark">
+                                <input type="radio" name="headerRadio" id="header-full-dark-radio" value="header-full-dark">
+                                <label for="header-full-dark-radio">Dark Header</label>
+                            </div>
+                            <div class="radio radio-dark">
+                                <input type="radio" name="headerRadio" id="no-header-radio" value="no-header">
+                                <label for="no-header-radio">No Header (Navbar mode)</label>
+                            </div>
+                        </form>
+                        <h5>Navbar Color</h5>
+                        <form id="navbar-option">
+                            <div class="radio radio-dark">
+                                <input type="radio" name="navbarRadio" id="navbar-light-radio" value="navbar-light">
+                                <label for="navbar-light-radio">Light Color</label>
+                            </div>
+                            <div class="radio radio-dark">
+                                <input type="radio" name="navbarRadio" id="navbar-dark-radio" value="navbar-dark" checked>
+                                <label for="navbar-dark-radio">Dark Color</label>
+                            </div>
+                            <div class="radio radio-dark">
+                                <input type="radio" name="navbarRadio" id="navbar-inverse-radio" value="navbar-inverse">
+                                <label for="navbar-inverse-radio">Primary Color</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- collapse panel -->
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion-conf" href="#collapseThree3" aria-expanded="true" aria-controls="collapseThree3" class="collapsed">
+                        Container Options
+                    </a>
+                </div>
+                <div id="collapseThree3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div class="panel-body">
+                        <form id="container-option">
+                            <div class="radio radio-dark">
+                                <input type="radio" name="containerRadio" id="width-boxed-radio" value="width-boxed">
+                                <label for="width-boxed-radio">Boxed Container</label>
+                            </div>
+                            <div class="radio radio-dark">
+                                <input type="radio" name="containerRadio" id="width-full-radio" value="width-full" checked>
+                                <label for="width-full-radio">Full Width Container</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="agm-configurator-button">
+        <button type="button" name="button" id="agm-configurator-btn"><i class="fa fa-gear"></i></button>
+    </div>
+</div>
+<?php include('include/header-inverse.html'); ?>
+
+
+<section class="carousel-section">
+    <div id="carousel-example-generic" class="carousel carousel-razon carousel-razon-dark slide" data-ride="carousel" data-interval="5000">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-7">
+                            <div class="carousel-caption">
+                                <div class="carousel-text">
+                                   <h1 class="animated fadeInDownBig animation-delay-7 carousel-title">A template, infinite possibilities</h1>
+                                   <h2 class="animated fadeInDownBig animation-delay-5  crousel-subtitle">Find out all you can offer Artificial Reason</h2>
+                                   <ul class="list-unstyled carousel-list">
+                                       <li class="animated bounceInLeft animation-delay-11"><i class="fa fa-check"></i>Built with Bootstrap</li>
+                                       <li class="animated bounceInLeft animation-delay-13"><i class="fa fa-check"></i>HTML5 and CSS3</li>
+                                       <li class="animated bounceInLeft animation-delay-15"><i class="fa fa-check"></i>Responsive Template</li>
+                                   </ul>
+                                   <p class="animated fadeInUpBig animation-delay-17">Lorem ipsum dolor sit amet consectetur adipisicing elit. In rerum maxime quis tenetur dolor <span>recusandae a nulla</span> qui enim dolorem.</p>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-5 hidden-xs carousel-img-wrap">
+                            <div class="carousel-img">
+                                <img src="assets/img/demo/pre.png" class="img-responsive animated bounceInUp animation-delay-3" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-8">
+                            <div class="carousel-caption">
+                                <div class="carousel-text">
+                                   <h1 class="animated fadeInDownBig animation-delay-7 carousel-title">A template, infinite possibilities</h1>
+                                   <h2 class="animated fadeInDownBig animation-delay-5  crousel-subtitle">We give you everything done, except the coffee</h2>
+                                   <ul class="list-unstyled carousel-list">
+                                       <li class="animated bounceInLeft animation-delay-11"><i class="fa fa-check"></i>Built with Bootstrap</li>
+                                       <li class="animated bounceInLeft animation-delay-13"><i class="fa fa-check"></i>HTML5 and CSS3</li>
+                                       <li class="animated bounceInLeft animation-delay-15"><i class="fa fa-check"></i>Responsive Template</li>
+                                   </ul>
+                                   <p class="animated fadeInUpBig animation-delay-17">Lorem ipsum dolor sit amet consectetur adipisicing elit. In rerum maxime quis tenetur dolor <span>recusandae a nulla</span> qui enim dolorem.</p>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-4 hidden-xs carousel-img-wrap">
+                            <div class="carousel-img">
+                                <img src="assets/img/demo/pre2.png" class="img-responsive animated bounceInUp animation-delay-3" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-7 col-sm-9">
+                            <div class="carousel-caption">
+                                <div class="carousel-text">
+                                   <h1 class="animated fadeInDownBig animation-delay-7 carousel-title">A template, infinite possibilities</h1>
+                                   <h2 class="animated fadeInDownBig animation-delay-5  crousel-subtitle">Find out all you can offer Artificial Reason</h2>
+                                   <ul class="list-unstyled carousel-list">
+                                       <li class="animated bounceInLeft animation-delay-11"><i class="fa fa-check"></i>Built with Bootstrap</li>
+                                       <li class="animated bounceInLeft animation-delay-13"><i class="fa fa-check"></i>HTML5 and CSS3</li>
+                                       <li class="animated bounceInLeft animation-delay-15"><i class="fa fa-check"></i>Responsive Template</li>
+                                   </ul>
+                                   <p class="animated fadeInUpBig animation-delay-17">Lorem ipsum dolor sit amet consectetur adipisicing elit. In rerum maxime quis tenetur dolor <span>recusandae a nulla</span> qui enim dolorem.</p>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-5 col-sm-3 hidden-xs carousel-img-wrap">
+                            <div class="carousel-img">
+                                <img src="assets/img/demo/pre3.png" class="img-responsive animated bounceInUp animation-delay-3" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+</section> <!-- carousel -->
+
+<section class="margin-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="content-box box-default animated fadeInUp animation-delay-10">
+                    <span class="icon-ar icon-ar-lg icon-ar-round icon-ar-inverse"><i class="fa fa-html5"></i></span>
+                    <h4 class="content-box-title">Lorem ipsum dolor</h4>
+                    <p>Consectetur adipisicing elit vritatis dolor rem officia molestiae atque eveniet inventore earum quas voluptates cumque</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="content-box box-default animated fadeInUp animation-delay-14">
+                    <span class="icon-ar icon-ar-lg icon-ar-round icon-ar-inverse"><i class="fa fa-css3"></i></span>
+                    <h4 class="content-box-title">Lorem ipsum dolor</h4>
+                    <p>Consectetur adipisicing elit vritatis dolor rem officia molestiae atque eveniet inventore earum quas voluptates cumque</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="content-box box-default animated fadeInUp animation-delay-16">
+                    <span class="icon-ar icon-ar-lg icon-ar-round icon-ar-inverse"><i class="fa fa-star"></i></span>
+                    <h4 class="content-box-title">Lorem ipsum dolor</h4>
+                    <p>Consectetur adipisicing elit vritatis dolor rem officia molestiae atque eveniet inventore earum quas voluptates cumque</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="content-box box-default animated fadeInUp animation-delay-12">
+                    <span class="icon-ar icon-ar-lg icon-ar-round icon-ar-inverse"><i class="fa fa-star"></i></span>
+                    <h4 class="content-box-title">Lorem ipsum dolor</h4>
+                    <p>Consectetur adipisicing elit vritatis dolor rem officia molestiae atque eveniet inventore earum quas voluptates cumque</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-lines">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="home-devices">
+                    <h3>The template for all devices</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, sapiente, nam sunt rem beatae architecto cupiditate numquam consectetur dolorum aliquam suscipit adipisci expedita vel quaerat illum aperiam facere inventore officia.</p>
+                    <p>Consequuntur sed ipsum eius minima eum velit soluta accusamus omnis maiores modi quae mollitia consectetur adipisci.</p>
+                    <ul class="icon-devices">
+                        <li class="active"><a href="#desktop" data-toggle="tab"><i class="fa fa-desktop"></i></a></li>
+                        <li><a href="#laptop" data-toggle="tab"><i class="fa fa-laptop"></i></a></li>
+                        <li><a href="#tablet" data-toggle="tab"><i class="fa fa-tablet"></i></a></li>
+                        <li><a href="#mobile" data-toggle="tab"><i class="fa fa-mobile"></i></a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="desktop">
+                        <img src="assets/img/demo/mac.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="tab-pane" id="laptop">
+                        <img src="assets/img/demo/macpro.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="tab-pane" id="tablet">
+                        <img src="assets/img/demo/ipad.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="tab-pane" id="mobile">
+                        <img src="assets/img/demo/iphone.png" alt="" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+    <section class="margin-bottom">
+        <p class="lead lead-lg text-center primary-color margin-bottom">Knows the <strong>Artificial Reason</strong> and surprise yourself</p>
+       <div class="row">
+            <div class="col-md-6">
+                <h2 class="no-margin-top">About us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, alias, nihil molestias libero corporis perferendis a quasi at.</p>
+                <p>Eos, illum, odit nulla provident sint atque quasi necessitatibus dolores voluptatibus perspiciatis aliquid tempora possimus laudantium. Blanditiis, deleniti!</p>
+                <p>Saepe, laborum, eligendi vitae ad excepturi officiis vel omnis quidem et dolorum rem vero explicabo consequatur mollitia nihil!</p>
+                <p>Fuga, omnis, quo, cumque, ipsa quasi facilis voluptatibus iure veniam nostrum voluptate accusantium dolore reprehenderit. Corrupti, mollitia, maiores!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit ducimus, pariatur ad ipsam et quod numquam eveniet magni aspernatur.</p>
+
+            </div>
+            <div class="col-md-6">
+                <div class="panel-group" id="accordion">
+                  <div class="panel panel-default">
+                    <div class="panel-heading panel-heading-link">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                          <i class="fa fa-lightbulb-o"></i> Talent and creativity
+                        </a>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                      <div class="panel-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati molestiae id ipsum ipsa repudiandae. Voluptatum, molestias, quas magnam repellat quos facilis sequi. Ullam optio eius deleniti dolore quasi doloribus ipsam incidunt perferendis.</p>
+                        <p>Dolores, corrupti, laborum, officia sit aliquam doloremque accusantium nemo sunt veniam est incidunt perferendis minima obcaecati ex aperiam voluptatibus blanditiis eum suscipit magnam dolorum in adipisci nihil ipsam perspiciatis molestiae!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading panel-heading-link">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed">
+                          <i class="fa fa-desktop"></i> Design and code
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit dignissimos inventore cupiditate expedita saepe enim nobis nostrum? Laborum, laudantium, maiores, cupiditate, perspiciatis at ad accusamus corporis sed ipsam et velit!</p>
+                        <p>Incidunt, harum itaque voluptatum asperiores recusandae explicabo maiores. Alias, quos, ex impedit at error id laborum fugit architecto qui beatae molestiae dolorum rem veritatis quia aliquam totam accusamus perferendis. Nulla!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading panel-heading-link">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed">
+                          <i class="fa fa-user"></i> Quality and Support
+                        </a>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, rerum unde doloribus accusamus pariatur non expedita quibusdam velit totam obcaecati. Consequatur, deserunt, asperiores quam nisi earum voluptates animi labore tempore!</p>
+                        <p>Dolorum, aliquam, totam labore saepe error a eum culpa assumenda sint laudantium ipsa iure ullam et dicta nesciunt repellendus optio voluptatibus reprehenderit odit officia fugiat necessitatibus recusandae architecto ad neque?</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+
+       </div>
+   </section>
+
+   <section class="margin-bottom">
+       <h2 class="section-title">Latest Works</h2>
+       <div class="bxslider-controls">
+            <span id="bx-prev4"></span>
+            <span id="bx-next4"></span>
+        </div>
+        <ul class="bxslider" id="latest-works">
+          <li>
+            <div class="img-caption-ar">
+                <img src="assets/img/demo/w1.jpg" class="img-responsive" alt="Image">
+                <div class="caption-ar">
+                    <div class="caption-content">
+                        <a href="#" class="animated fadeInDown"><i class="fa fa-search"></i>More info</a>
+                        <h4 class="caption-title">Title Caption</h4>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="img-caption-ar">
+                <img src="assets/img/demo/w2.jpg" class="img-responsive" alt="Image">
+                <div class="caption-ar">
+                    <div class="caption-content">
+                        <a href="#" class="animated fadeInDown"><i class="fa fa-search"></i>More info</a>
+                        <h4 class="caption-title">Title Caption</h4>
+                    </div>
+                </div>
+            </div>
+          </li>
+          <li>
+            <div class="img-caption-ar">
+                <img src="assets/img/demo/w3.jpg" class="img-responsive" alt="Image">
+                <div class="caption-ar">
+                    <div class="caption-content">
+                        <a href="#" class="animated fadeInDown"><i class="fa fa-search"></i>More info</a>
+                        <h4 class="caption-title">Title Caption</h4>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="img-caption-ar">
+                <img src="assets/img/demo/w4.jpg" class="img-responsive" alt="Image">
+                <div class="caption-ar">
+                    <div class="caption-content">
+                        <a href="#" class="animated fadeInDown"><i class="fa fa-search"></i>More info</a>
+                        <h4 class="caption-title">Title Caption</h4>
+                    </div>
+                </div>
+            </div>
+          </li>
+          <li>
+            <div class="img-caption-ar">
+                <img src="assets/img/demo/w5.jpg" class="img-responsive" alt="Image">
+                <div class="caption-ar">
+                    <div class="caption-content">
+                        <a href="#" class="animated fadeInDown"><i class="fa fa-search"></i>More info</a>
+                        <h4 class="caption-title">Title Caption</h4>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="img-caption-ar">
+                <img src="assets/img/demo/w6.jpg" class="img-responsive" alt="Image">
+                <div class="caption-ar">
+                    <div class="caption-content">
+                        <a href="#" class="animated fadeInDown"><i class="fa fa-search"></i>More info</a>
+                        <h4 class="caption-title">Title Caption</h4>
+                    </div>
+                </div>
+            </div>
+          </li>
+          <li>
+            <div class="img-caption-ar">
+                <img src="assets/img/demo/w7.jpg" class="img-responsive" alt="Image">
+                <div class="caption-ar">
+                    <div class="caption-content">
+                        <a href="#" class="animated fadeInDown"><i class="fa fa-search"></i>More info</a>
+                        <h4 class="caption-title">Title Caption</h4>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="img-caption-ar">
+                <img src="assets/img/demo/w8.jpg" class="img-responsive" alt="Image">
+                <div class="caption-ar">
+                    <div class="caption-content">
+                        <a href="#" class="animated fadeInDown"><i class="fa fa-search"></i>More info</a>
+                        <h4 class="caption-title">Title Caption</h4>
+                    </div>
+                </div>
+            </div>
+          </li>
+          <li>
+            <div class="img-caption-ar">
+                <img src="assets/img/demo/w9.jpg" class="img-responsive" alt="Image">
+                <div class="caption-ar">
+                    <div class="caption-content">
+                        <a href="#" class="animated fadeInDown"><i class="fa fa-search"></i>More info</a>
+                        <h4 class="caption-title">Title Caption</h4>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="img-caption-ar">
+                <img src="assets/img/demo/w10.jpg" class="img-responsive" alt="Image">
+                <div class="caption-ar">
+                    <div class="caption-content">
+                        <a href="#" class="animated fadeInDown"><i class="fa fa-search"></i>More info</a>
+                        <h4 class="caption-title">Title Caption</h4>
+                    </div>
+                </div>
+            </div>
+          </li>
+          <li>
+            <div class="img-caption-ar">
+                <img src="assets/img/demo/w11.jpg" class="img-responsive" alt="Image">
+                <div class="caption-ar">
+                    <div class="caption-content">
+                        <a href="#" class="animated fadeInDown"><i class="fa fa-search"></i>More info</a>
+                        <h4 class="caption-title">Title Caption</h4>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="img-caption-ar">
+                <img src="assets/img/demo/w12.jpg" class="img-responsive" alt="Image">
+                <div class="caption-ar">
+                    <div class="caption-content">
+                        <a href="#" class="animated fadeInDown"><i class="fa fa-search"></i>More info</a>
+                        <h4 class="caption-title">Title Caption</h4>
+                    </div>
+                </div>
+            </div>
+          </li>
+        </ul>
+   </section>
+
+   <section>
+       <p class="slogan text-center">Discover our projects and the rigorous process of <span>creation</span>. Our principles are <span>creativity</span>, <span>design</span>, <span>experience</span> and <span>knowledge</span>. We are backed by 20 years of <span>research</span>.</p>
+        <h2 class="section-title">Out clients</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="bxslider-controls">
+                     <span id="bx-prev5"></span>
+                     <span id="bx-next5"></span>
+                 </div>
+                 <ul class="bxslider" id="home-block">
+                    <li>
+                        <blockquote class="blockquote-color">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante ultricies nisi vel augue quam semper libero.</p>
+                            <footer>Brian Krzanich, Intel CEO</footer>
+                        </blockquote>
+                    </li>
+                    <li>
+                        <blockquote class="blockquote-color">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante ultricies nisi vel augue quam semper libero.</p>
+                            <footer>Brian Krzanich, Intel CEO</footer>
+                        </blockquote>
+                    </li>
+                    <li>
+                        <blockquote class="blockquote-color">
+                            <p>Dolore totam at ea reiciendis suscipit a tempore cum nisi aspernatur nisi alias posuere erat a ante posuere erat a ante ultricies ultricies nisi vel augue quam semper conse erat quuntur.</p>
+                            <footer>Sheldon Cooper, Physical Quantum</footer>
+                        </blockquote>
+                    </li>
+                    <li>
+                        <blockquote class="blockquote-color">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante ultricies nisi vel augue quam semper libero.</p>
+                            <footer>Brian Krzanich, Intel CEO</footer>
+                        </blockquote>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 col-xs-6"><img src="assets/img/demo/intel.png" alt="" class="img-responsive"></div>
+                    <div class="col-md-3 col-sm-3 col-xs-6"><img src="assets/img/demo/microsoft.png" alt="" class="img-responsive"></div>
+                    <div class="col-md-3 col-sm-3 col-xs-6"><img src="assets/img/demo/nokia.png" alt="" class="img-responsive"></div>
+                    <div class="col-md-3 col-sm-3 col-xs-6"><img src="assets/img/demo/samsung.png" alt="" class="img-responsive"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 col-xs-6"><img src="assets/img/demo/anz.png" alt="" class="img-responsive"></div>
+                    <div class="col-md-3 col-sm-3 col-xs-6"><img src="assets/img/demo/maxis.png" alt="" class="img-responsive"></div>
+                    <div class="col-md-3 col-sm-3 col-xs-6"><img src="assets/img/demo/sony.png" alt="" class="img-responsive"></div>
+                    <div class="col-md-3 col-sm-3 col-xs-6"><img src="assets/img/demo/hp.png" alt="" class="img-responsive"></div>
+                </div>
+            </div>
+        </div>
+   </section>
+
+</div>
+
+<aside id="footer-widgets">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="footer-widget-title">Sitemap</h3>
+                <ul class="list-unstyled three_cols">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="portfolio_sidebar.html">Portafolio</a></li>
+                    <li><a href="portfolio_topvar.html">Works</a></li>
+                    <li><a href="page_timeline_left.html">Timeline</a></li>
+                    <li><a href="page_pricing.html">Pricing</a></li>
+                    <li><a href="page_about2.html">About Us</a></li>
+                    <li><a href="page_team.html">Our Team</a></li>
+                    <li><a href="page_services.html">Services</a></li>
+                    <li><a href="page_support.html">FAQ</a></li>
+                    <li><a href="page_login_full.html">Login</a></li>
+                    <li><a href="page_contact.html">Contact</a></li>
+                </ul>
+                <h3 class="footer-widget-title">Subscribe</h3>
+                <p>Lorem ipsum Amet fugiat elit nisi anim mollit minim labore ut esse Duis ullamco ad dolor veniam velit.</p>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Email Adress">
+                    <span class="input-group-btn">
+                        <button class="btn btn-ar btn-primary" type="button">Subscribe</button>
+                    </span>
+                </div><!-- /input-group -->
+            </div>
+            <div class="col-md-4">
+                <div class="footer-widget">
+                    <h3 class="footer-widget-title">Recent Post</h3>
+                    <div class="media">
+                        <a class="pull-left" href="#"><img class="media-object" src="assets/img/demo/m2.jpg" width="75" height="75" alt="image"></a>
+                        <div class="media-body">
+                            <h4 class="media-heading"><a href="#">Lorem ipsum Duis quis occaecat minim lorem ipsum tempor officia labor</a></h4>
+                            <small>August 18, 2013</small>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <a class="pull-left" href="#"><img class="media-object" src="assets/img/demo/m11.jpg" width="75" height="75" alt="image"></a>
+                        <div class="media-body">
+                            <h4 class="media-heading"><a href="#">Lorem ipsum dolor excepteur sunt in lorem ipsum cillum tempor</a></h4>
+                            <small>September 14, 2013</small>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <a class="pull-left" href="#"><img class="media-object" src="assets/img/demo/m4.jpg" width="75" height="75" alt="image"></a>
+                        <div class="media-body">
+                            <h4 class="media-heading"><a href="#">Lorem ipsum Dolor cupidatat minim adipisicing et fugiat</a></h4>
+                            <small>October 9, 2013</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="footer-widget">
+                    <h3 class="footer-widget-title">Recent Works</h3>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-3 col-xs-6">
+                            <a href="#" class="thumbnail"><img src="assets/img/demo/wf1.jpg" class="img-responsive" alt="Image"></a>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-3 col-xs-6">
+                            <a href="#" class="thumbnail"><img src="assets/img/demo/wf2.jpg" class="img-responsive" alt="Image"></a>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-3 col-xs-6">
+                            <a href="#" class="thumbnail"><img src="assets/img/demo/wf3.jpg" class="img-responsive" alt="Image"></a>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-3 col-xs-6">
+                            <a href="#" class="thumbnail"><img src="assets/img/demo/wf4.jpg" class="img-responsive" alt="Image"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- row -->
+    </div> <!-- container -->
+</aside> <!-- footer-widgets -->
+<footer id="footer">
+    <p>&copy; 2014 <a href="#">Artificial Reason</a>, inc. All rights reserved.</p>
+</footer>
+
+</div> <!-- boxed -->
+</div> <!-- sb-site -->
+
+<div class="sb-slidebar sb-right sb-style-overlay">
+    <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search...">
+        <span class="input-group-btn">
+            <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+        </span>
+    </div><!-- /input-group -->
+
+    <h2 class="slidebar-header no-margin-bottom">Navigation</h2>
+    <ul class="slidebar-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio_topbar.html">Portfolio</a></li>
+        <li><a href="page_about3.html">About us</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="page_contact.html">Contact</a></li>
+    </ul>
+
+    <h2 class="slidebar-header">Social Media</h2>
+    <div class="slidebar-social-icons">
+        <a href="#" class="social-icon-ar rss"><i class="fa fa-rss"></i></a>
+        <a href="#" class="social-icon-ar facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="social-icon-ar twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="social-icon-ar pinterest"><i class="fa fa-pinterest"></i></a>
+        <a href="#" class="social-icon-ar instagram"><i class="fa fa-instagram"></i></a>
+        <a href="#" class="social-icon-ar wordpress"><i class="fa fa-wordpress"></i></a>
+        <a href="#" class="social-icon-ar linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="#" class="social-icon-ar flickr"><i class="fa fa-flickr"></i></a>
+        <a href="#" class="social-icon-ar vine"><i class="fa fa-vine"></i></a>
+        <a href="#" class="social-icon-ar dribbble"><i class="fa fa-dribbble"></i></a>
+    </div>
+</div> <!-- sb-slidebar sb-right -->
+<div id="back-top">
+    <a href="#header"><i class="fa fa-chevron-up"></i></a>
+</div>
+
+<!-- Scripts -->
+<!-- Compiled in vendors.js -->
+<!--
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.cookie.js"></script>
+<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/bootstrap-switch.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/slidebars.min.js"></script>
+<script src="assets/js/jquery.bxslider.min.js"></script>
+<script src="assets/js/holder.js"></script>
+<script src="assets/js/buttons.js"></script>
+<script src="assets/js/jquery.mixitup.min.js"></script>
+<script src="assets/js/circles.min.js"></script>
+<script src="assets/js/masonry.pkgd.min.js"></script>
+<script src="assets/js/jquery.matchHeight-min.js"></script>
+-->
+
+<script src="assets/js/vendors.js"></script>
+
+<!--<script type="text/javascript" src="assets/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
+<script type="text/javascript" src="assets/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>-->
+
+
+<!-- Syntaxhighlighter -->
+<script src="assets/js/syntaxhighlighter/shCore.js"></script>
+<script src="assets/js/syntaxhighlighter/shBrushXml.js"></script>
+<script src="assets/js/syntaxhighlighter/shBrushJScript.js"></script>
+
+<script src="assets/js/DropdownHover.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/holder.js"></script>
+<script src="assets/js/home_inverse_navbar.js"></script>
+
+</body>
+
+</html>

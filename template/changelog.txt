@@ -1,0 +1,162 @@
+Version 1.4.9
+-------------
+* Fix: Boxed Background
+
+Version 1.4.8
+-------------
+* New: Now Slidebar is overlay
+* Update gulp and gulp plugins
+* Update grunt and grunt plugins
+* Update font-awesome  4.5.0  →  4.6.3
+* Update jquery        2.2.0  →  2.2.4
+* Update masonry       4.0.0  →  4.1.0
+* Fix CSS Typography page
+* Fix Login and search dropdown z-index
+* Fix Theme Configurator
+* Fix margin Coming Soon 2
+* Fix Navbar Toggle
+
+Version 1.4.7
+-------------
+* New Theme Configurator
+* Update gulp and gulp plugins
+* Update grunt and grunt plugins
+* Update animate-css   3.4.0  →  3.5.1
+* Update jquery        2.1.4  →  2.2.0
+* Update lightbox      2.8.1  →  2.8.2
+* Update matchHeight   0.6.0  →  0.7.0
+* Update imagesloaded  3.2.0  →  4.1.0
+* Update masonry       3.3.2  →  4.0.0
+* Update holderjs      2.9.0  →  2.9.3
+* Fixed div tag in blogs pages
+
+Version 1.4.6
+-------------
+* Update Bootstrap to 3.3.6
+* Update Font Awesome to 4.5.0
+* Update Mixitup to 2.1.11
+* Update gulp and gulp plugins
+* Update grunt and grunt plugins
+* Fix gulpfile sintax
+* Fix and Update holder.js (2.9.0)
+* Improved hover dropdown
+* Improved Syntaxhighlighter code
+* Improved navbar menu toggle button (Mobiles)
+
+Version 1.4.5
+-------------
+* Update Font Awesome to 4.4.0
+* Update html5shiv to 3.7.3
+* Update jquery countdown to 2.1.0
+* Update mixitup to 2.1.10
+* Update masonry to 3.3.2
+* Update wowjs to 1.1.2
+* Fix counters
+* Fix wowjs error
+
+Version 1.4.4
+-------------
+* Change name Counters page
+* Bootstrap Dropdown with Hover
+* Update jquery to 2.1.4
+* Update bootstrap to 3.3.5
+* Update BxSlider to 4.2.5
+* Update lightbox to 4.7.4
+* Update wowjs to 1.1.0
+* Update masonry to 3.3.0
+* Update Gulp and Gulp plugins
+* Update Grunt and Grunt plugins
+* Change path of Slidebars in gulp file
+
+Version 1.4.3
+-------------
+* New: CSS Style for Checkbox and Radio Inputs
+* Fixed: Correct class Header-Dark-Dark and Header-Dark-Inverse
+* Update documentation
+
+Version 1.4.2.1
+-------------
+* Fixed: Add dist folder
+
+Version 1.4.2
+-------------
+* Fixed: syntaxhighlighter css include
+* Update: MatchHeight Jquery plugin in Bower
+
+Version 1.4.1
+-------------
+* Update: Concatenated javascripts files from third parties in vendors.js
+* Update: Concatenated css files from third parties in vendors.css
+* Fixed: html5shiv correct copy to dist folder
+* Fixed: Delete media="screen" from CSS links
+* Fixed: Remove Styleswitcher from Grunt version
+
+
+Version 1.4.0
+-------------
+* New: Gulp support
+* New: Megamenu support
+* New: Masonry layer support
+* New: Home Product Template
+* New: Blog Masonry Template
+* New: Card Profile Component
+* New: Navbar Tabs Component
+* New: Counters Component
+* New: Preload Gif
+* Update Demo Configurator
+* Update Buttons library to 2.0.0
+* Update BxSlider to 4.2.3
+* Update Jquery to 1.11.2
+* Update Slidebars to  0.10.2
+* Update WoW.js to  1.0.3
+* Update bootstrap-switch to  3.3.2
+
+Version 1.3.0
+-------------
+* Update Bootstrap to 3.3.4
+
+Version 1.2.3
+-------------
+* Update Bootstrap to 3.3.2
+* Update Font Awesome to 4.3.0
+
+Version 1.2.2
+-------------
+* Fix: Checkbox margin
+
+Version 1.2.1
+-------------
+* Change: Header social icon googleplus class change to google-plus
+* Fix: Change page Our Clients pull-left class to new media-left class
+
+Version 1.2.0
+-------------
+* New: Switch Controls
+* New: Vertical Tabs Components
+* New: Home Subscribe Intro
+* Improvements javascript files
+* Update Bootstrap to 3.3.1
+* Update WOW.js to 1.0.2
+* Update Slidebars to 0.10.2
+* Update Mixitup to 2.1.7
+* Update Font Awesome to 4.2.0
+* Fixed: The "All" portfolio control now works correctly
+* Change bootstrap.css to bootstrap.min.css by default
+* styleswitcher.js more efficient and improved
+
+
+
+Version 1.1.0
+-------------
+* Grunt Support (new)
+* Restructures directories
+* Change font headers Coming Soon Option 1. Lato to Muli
+* Change font headers Home Full Intro. Lato to Muli
+* Fixed: Remove header logo in small devices.
+* Fixed: z-index controls carousel-images changed from 2000 to 90
+* Fixed: Some links of the demo.
+
+
+Version 1.0.0
+-------------
+* Initial Release
