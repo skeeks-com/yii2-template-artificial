@@ -9,7 +9,7 @@ namespace skeeks\template\artificial;
 use yii\web\AssetBundle;
 class UnifyAsset extends AssetBundle
 {
-    public $sourcePath = '@skeeks/template/artificial/src/HTML/assets/';
+    public $sourcePath = '@skeeks/template/artificial/template/dist/assets/';
     /**
      * @param string $asset
      * @return string
